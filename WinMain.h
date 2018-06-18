@@ -8,6 +8,6 @@
 #endif
 
 int _tmain(int argc, char* argv[]);
-int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTA lpCmdLine, int nCmdShow);
+int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
 
 #endif //_WINMAIN_H

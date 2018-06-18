@@ -13,15 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{2e1f9023-3d6e-42b3-abda-ebdbf3682014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Main">
+      <UniqueIdentifier>{3e253150-d5ab-49d7-b073-d49f93b22b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\defines">
+      <UniqueIdentifier>{68c691f5-8bda-4890-9c25-063b235cee1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WinMain.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>Header Files\defines</Filter>
+    </ClInclude>
+    <ClInclude Include="iostream.h">
+      <Filter>Header Files\defines</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WinMaincpp.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Header Files\Core\Main</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
