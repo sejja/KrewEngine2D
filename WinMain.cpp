@@ -8,6 +8,10 @@
 	#include "iostream.h"
 #endif"
 
+#ifndef _DELETEMACRO_H
+	#include "deletemacros.h"
+#endif
+
 #if defined (DEBUG) | defined(_DEBUG)
 int _tmain(int argc, char* argv[]) {
 	UNREFERENCED_PARAMETER(argc);
@@ -27,7 +31,7 @@ UNREFERENCED_PARAMETER(hPrevInstance);
 UNREFERENCED_PARAMETER(lpCmdLine);
 UNREFERENCED_PARAMETER(nCmdShow);
 
-#if defined (DEBUG) | (_DEBUG)
+#if defined (DEBUG) | defined (_DEBUG)
 HeapSetInformation(NULL, HeapEnableTerminationOnCorruption, NULL, 0);
 
 	//Enable Runtime Memory Leak Check For Debug 
@@ -42,7 +46,7 @@ HeapSetInformation(NULL, HeapEnableTerminationOnCorruption, NULL, 0);
 //int result - pEngine->RunLoop;
 
 //Delete the Engine
-//delete pEngine;
+//safeDelete(pEngine);
 
 //return result;
 

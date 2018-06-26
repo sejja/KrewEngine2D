@@ -22,6 +22,18 @@
     <Filter Include="Header Files\defines">
       <UniqueIdentifier>{68c691f5-8bda-4890-9c25-063b235cee1b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core\Systems">
+      <UniqueIdentifier>{8d72fc51-7cb3-40ce-b2f6-e8fb6862b349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SceneGraph">
+      <UniqueIdentifier>{2c28b247-e8ac-48bc-b1f4-6ad940d17f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SceneGraph\Base">
+      <UniqueIdentifier>{138917bc-b43a-4b92-9355-2776dc66d200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\defines\Context">
+      <UniqueIdentifier>{3a717aba-7134-48eb-9b87-0ff9f42d6db3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WinMain.h">
@@ -33,10 +45,40 @@
     <ClInclude Include="iostream.h">
       <Filter>Header Files\defines</Filter>
     </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deletemacros.h">
+      <Filter>Header Files\defines</Filter>
+    </ClInclude>
+    <ClInclude Include="Uobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="context.h">
+      <Filter>Header Files\defines\Context</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
       <Filter>Header Files\Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Header Files\Core\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Uobject.cpp">
+      <Filter>Header Files\Core\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
